@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Site Metas -->
+  <title>Shale Pizza</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Site CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Bootsrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!--icon wed-->
+  <link rel='shortcut icon' href='./imgPiza/Special-offer1 (1).jpg' />
+  <!-- Angular JS -->
+  <script src="aj/angular.min.js"></script>
+
+</head>
+
+<body>
+  <!-- Start header -->
+
+  <header class="top-navbar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html"><img src="imgPiza/logo.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarNav">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link d-flex justify-content-center align-items-center" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex justify-content-center align-items-center" href="./menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex justify-content-center align-items-center" href="About.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex justify-content-center align-items-center" href="ContactUs.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex justify-content-center align-items-center" href="Blog.html">Blogs</a>
+          </li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li class="nav-item">
+            <a id="user" class="d-flex flex-column navbar-collapse justify-content-end " type="button" href="#"
+              data-toggle="modal" data-target="#cart">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart2"
+                viewBox="0 0 16 16">
+                <path
+                  d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0      1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+              </svg>
+              <span>Cart<sup><span class="total-count"></span></sup></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a id="user" class=" d-flex flex-column justify-content-center align-items-center"
+              data-bs-auto-close="outside" data-bs-toggle="dropdown" aria-expanded="false" href="Login.html">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-user">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+              <span>User</span>
+            </a>
+          </li>
+        </ul>
+        <!-- space -->
+        <ul class="nav navbar-nav navbar-right">
+          <li class="nav-item">
+            <a class="nav-link d-flex justify-content-center align-items-center"> </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex justify-content-center align-items-center"></a>
+          </li>
+        </ul>
+        <!-- space -->
+      </div>
+    </nav>
+  </header>
+  <!-- End header -->
+
+
+  <!-- Start About -->
+  <div class="aboutUs">
+    <div class="col-12">
+      <h2 class="fw-bold text-uppercase text-center">About Us</h2>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <img src="imgPiza/about.jpg" alt="#" class="img-fluid">
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 text-center">
+          <div class="inner-column">
+            <h2><span>History of Pizza</span></h2>
+            <hr>
+            <p>A precursor of pizza was probably the focaccia, a flatbread known to the Romans as panis focacius, to
+              which toppings were then added. Modern pizza evolved from similar flatbread dishes in Naples, Italy, in
+              the 18th or early 19th century. </p>
+            <p>The word pizza was first documented in 997 AD in Gaeta and successively in different parts of Central
+              and Southern Italy. Pizza was mainly eaten in Italy and by emigrants from there. This changed after
+              World War II when Allied troops stationed in Italy came to enjoy pizza along with other Italian foods.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+   
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 text-center">
+            <div class="inner-column">
+              <h2><span>Our of Story</span></h2>
+              <hr>
+              <p> We are a family owned and operated fresh and Vietnam restaurant. Mesmerized with the flavors and
+                tantalizing
+                aroma of Italian spices and the beauty in its wonderful and colorful appeal, made us fell in love with
+                the
+                idea or serving this amazing taste to our community. </p>
+              <p> With, not only great pizzas, drinks,
+                sandwiches and desserts, but also a new attitude toward be a part of our community, using sustainable
+                products and creating an affordable Vietnam place using the best and fresh ingredients available. All of
+                our
+                pizzas are made to order with fresh hand tossed dough and topped with our special cheese blend.</p>
+
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <img src="./imgPiza/AboutUs.jpg" alt="#" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- End About -->
+ 
+    <!-- Star Store Location -->
+    <div class="stuff-box">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="heading-title text-center">
+              <h2>STORE LOCATION</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-6">
+            <div class="our-team">
+              <img src="imgPiza/Paris.jpg">
+              <div class="team-content">
+                <h3 class="title">Paris</h3>
+                <h6>(BRANCH II)</h6>
+                <span class="post">Champ de Mars, 5 Av. Anatole France, 75007 Paris, France.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <div class="our-team">
+              <img src="imgPiza/HoChiMinhCity.jpeg">
+              <div class="team-content">
+                <h3 class="title">Ho Chi Minh City</h3>
+                <h6>(BRANCH I)</h6>
+                <span class="post">590 August Revolution, District 3, Ho Chi Minh City, Vietnam.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <div class="our-team">
+              <img src="imgPiza/Califonia.jpg">
+              <div class="team-content">
+
+                <h3 class="title">California</h3>
+                <h6>(BRANCH III)</h6>
+                <span class="post">3883 W Century Blvd, Inglewood, CA 90303, United states.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Store Location -->
+
+
+
+  <!-- Start Member Card -->
+  <div class="member-reviews-box">
+    <div class="container">
+      <div class="Member-Card">
+        <div class="col-lg-12">
+          <div class="heading-title text-center">
+            <h2>GROUP MEMBERS</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 mr-auto ml-auto text-center">
+          <div id="reviews" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner mt-4">
+              <div class="carousel-item text-center active">
+                <div class="img-box p-1 border rounded-circle m-auto">
+                  <img class="d-block w-100 rounded-circle" src="./imgprofile/image2.png" alt="">
+                </div>
+                <h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Nguyen Van Than</strong></h5>
+                <h6 class="text-dark m-0">Web Designer</h6>
+              </div>
+            <a class="carousel-control-prev" href="#reviews" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#reviews" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Member Card -->
+  <!--shoping card-->
+  <!-- Modal -->
+  <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Your Cart
+            <a type="button"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                class="bi bi-cart2" viewBox="0 0 16 16">
+
+                <path
+                  d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+              </svg><sup><sup><span class="total-count"></span></sup></sup>
+            </a>
+          </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <table class="show-cart table">
+
+          </table>
+          <div>Total price: <span class="total-cart"></span>€</div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-order">Order now</button>
+          <button class="clear-cart btn btn-danger">Clear Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  </div>
+  <!--Start Footer-->
+  <footer class="footer background">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <h3>About Us</h3>
+          <p>At Shale Pizza, we know that pizza is more than just food. Pizza is the centre of the family on a
+            Friday
+            night.
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h3>Opening Hours</h3>
+          <p><span>Monday : Closed</p>
+          <p>Tue-Wed : 9:Am - 10PM</p>
+          <p>Thu-Fri : 9:Am - 10PM</p>
+          <p>Sat-Sun : 5:PM - 10PM</p>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h3>Contact Information</h3>
+          <p>590 August Revolution, District 3, Ho Chi Minh City.</p>
+          <p>Phone: +84 338 805 198</p>
+          <p>Email: shalepizza@gmail.com</p>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h3>Subscribe</h3>
+          <div class="subscribe">
+            <form class="subscribe">
+              <input name="email" class="form_input" placeholder="Enter Email..." type="email">
+              <button type="submit" class="submit">SUBSCRIBE</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-lg-12">
+          <p class="coppy-right">All Rights Reserved. © 2022 Shale Pizza Restaurant.
+        </div>
+      </div>
+  </footer>
+  <!-- End Footer -->
+
+
+  <script src="./shopingcart.js"></script>
+</body>
+
+</html>

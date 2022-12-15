@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Site Metas -->
+  <title>Shale Pizza</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Site CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Bootsrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!--icon wed-->
+  <link rel='shortcut icon' href='./imgPiza/Special-offer1 (1).jpg' />
+  <!-- Angular JS -->
+  <script src="aj/angular.min.js"></script>
+  <!-- Sweet Arlert -->
+  <script src="dist/sweetalert.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="dist/sweetalert.css">
+</head>
+
+<body>
+  <!-- Start header -->
+
+  <header class="top-navbar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html"><img src="imgPiza/logo.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarNav">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link d-flex justify-content-center align-items-center" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex justify-content-center align-items-center" href="./menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex justify-content-center align-items-center" href="About.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex justify-content-center align-items-center" href="ContactUs.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex justify-content-center align-items-center" href="Blog.html">Blogs</a>
+          </li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li class="nav-item">
+            <a id="user" class="d-flex flex-column navbar-collapse justify-content-end " type="button" href="#"
+              data-toggle="modal" data-target="#cart">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart2"
+                viewBox="0 0 16 16">
+                <path
+                  d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0      1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+              </svg>
+              <span>Cart<sup><span class="total-count"></span></sup></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a id="user" class=" d-flex flex-column justify-content-center align-items-center"
+              data-bs-auto-close="outside" data-bs-toggle="dropdown" aria-expanded="false" href="Login.html">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-user">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+              <span>User</span>
+            </a>
+          </li>
+        </ul>
+        <!-- space -->
+        <ul class="nav navbar-nav navbar-right">
+          <li class="nav-item">
+            <a class="nav-link d-flex justify-content-center align-items-center"> </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex justify-content-center align-items-center"></a>
+          </li>
+        </ul>
+        <!-- space -->
+      </div>
+    </nav>
+  </header>
+  <!-- End header -->
+
+
+  <br><br><br>
+  <div class="footerlete backgroundlete">
+    <!-- Start menu -->
+    <div class="section-categories pt-5 pb-5">
+      <div class="text-center">
+        <h1 class="d-inline-block text-uppercase fw-bold text-title-decoration">The Menu Foods</h1>
+      </div>
+      <!-- product promo -->
+      <div id="load-data-menu">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <a href="./pizza.html" class="link-categogries">
+                <div class="img-card">
+                  <img src="imgPiza/MENU/PIZZA.PNG" width="80%" alt="#">
+                </div>
+              </a>
+            </div>
+
+            <div class="col">
+              <a href="./BEVERAGE.html" class="link-categogries">
+                <div class="img-card">
+                  <img src="imgPiza/MENU/BEVERAGE.PNG" width="80%" alt="#">
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a href="./DESSERT.html" class="link-categogries">
+                <div class="img-card">
+                  <img src="imgPiza/MENU/DESSERT.PNG" width="80%" alt="#">
+                </div>
+              </a>
+            </div>
+
+            <div class="col">
+              <a href="./bread.html" class="link-categogries">
+                <div class="img-card">
+                  <img src="imgPiza/MENU/BREAD.PNG" width="80%" alt="#">
+                </div>
+              </a>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- End menu -->
+  <!-- Menu Download -->
+  <div class="menu-download">
+    <a style="background-color: #e5ba5d; width: 240px;"
+      class="btn px-4 py-3 text-white d-flex align-items-center justify-content-between">
+      <svg width="25px" fill="currentColor" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 191.667 191.667"
+        style="enable-background:new 0 0 191.667 191.667;" xml:space="preserve">
+        <path d="M95.833,0C42.991,0,0,42.99,0,95.833s42.991,95.834,95.833,95.834s95.833-42.991,95.833-95.834S148.676,0,95.833,0z
+        M150.862,79.646l-60.207,60.207c-2.56,2.56-5.963,3.969-9.583,3.969c-3.62,0-7.023-1.409-9.583-3.969l-30.685-30.685
+        c-2.56-2.56-3.97-5.963-3.97-9.583c0-3.621,1.41-7.024,3.97-9.584c2.559-2.56,5.962-3.97,9.583-3.97c3.62,0,7.024,1.41,9.583,3.971
+        l21.101,21.1l50.623-50.623c2.56-2.56,5.963-3.969,9.583-3.969c3.62,0,7.023,1.409,9.583,3.969
+        C156.146,65.765,156.146,74.362,150.862,79.646z" />
+        <g>
+      </svg>
+      <span>Download Menu</span>
+    </a>
+  </div>
+  <div class="footerle backgroundle">
+    <h1 class="heading"> <span>DESSERT </span></h1>
+    <div class="containerProduct">
+
+      <a href="./details/Strawberry cake.html" style="text-decoration: none">
+        <div class="card">
+
+          <div class="imgBox">
+            <img src="details/product img/Dessert/BerryCake/Ber1.png" class="pizza">
+          </div>
+
+          <div class="contentBox">
+            <h3 style="color: 	#7FFF00;">STRAWBERRY CAKE</h3>
+            <h2 class="price">30€</h2>
+            <a data-toggle="modal" data-target="#cart" data-name="STRAWBERRY" data-price="30" class="add-to-cart btn buy">Buy Now</a>
+          </div>
+
+        </div>
+      </a>
+      <a href="./details/3 tier flan.html" style="text-decoration: none">
+        <div class="card">
+
+          <div class="imgBox">
+            <img src="details/product img/Dessert/CheeseCake/Cheese1.png" class="pizza">
+          </div>
+
+          <div class="contentBox">
+            <h3 style="color: 	#7FFF00;">
+              Cheese Cake</h3>
+            <h2 class="price">35€</h2>
+            <a data-toggle="modal" data-target="#cart" data-name="CheeseCake" data-price="35" class="add-to-cart btn buy">Buy Now</a>
+          </div>
+
+        </div>
+      </a>
+      <a href="./details/3 tier matcha flan.html" style="text-decoration: none">
+        <div class="card">
+
+          <div class="imgBox">
+            <img src="details/product img/Dessert/JapaneseDaifuku/Japan1.png" class="pizza">
+          </div>
+
+          <div class="contentBox">
+            <h3 style="color: 	#7FFF00;">
+              DAIFUKU</h3>
+            <h2 class="price">33€</h2>
+            <a data-toggle="modal" data-target="#cart" data-name="DAIFUKU" data-price="33" class="add-to-cart btn buy">Buy Now</a>
+          </div>
+
+        </div>
+      </a>
+      <a href="./details/banhfrench.html" style="text-decoration: none">
+        <div class="card">
+
+          <div class="imgBox">
+            <img src="details/product img/Dessert/MatchaPudding/Mat1.png" class="pizza">
+          </div>
+
+          <div class="contentBox">
+            <h3 style="color: 	#7FFF00;">
+              MATCHA PUDDING
+            </h3>
+            <h2 class="price">40€</h2>
+            <a data-toggle="modal" data-target="#cart" data-name="MATCHA-PUDDING" data-price="40" class="add-to-cart btn buy">Buy Now</a>
+          </div>
+
+        </div>
+    </div>
+
+    <!--product2-->
+    <div class="containerProduct">
+
+      <a href="./details/cheesecake.html" style="text-decoration: none">
+        <div class="card">
+
+          <div class="imgBox">
+            <img src="details/product img/Dessert/PanCake/Pan1.png" class="pizza">
+          </div>
+
+          <div class="contentBox">
+            <h3 style="color: 	#7FFF00;">PAN CAKE</h3>
+            <h2 class="price">50€</h2>
+            <a data-toggle="modal" data-target="#cart" data-name="PAN-CAKE" data-price="50" class="add-to-cart btn buy">Buy Now</a>
+          </div>
+
+        </div>
+      </a>
+      <a href="./details/Dadar Gulung.html" style="text-decoration: none">
+        <div class="card">
+
+          <div class="imgBox">
+            <img src="details/product img/Dessert/PeachCake/Peach1.png" class="pizza">
+          </div>
+
+          <div class="contentBox">
+            <h3 style="color: 	#7FFF00;">PEACH CAKE</h3>
+            <h2 class="price">35€</h2>
+            <a data-toggle="modal" data-target="#cart" data-name="PEACH-CAKE" data-price="35" class="add-to-cart btn buy">Buy Now</a>
+          </div>
+
+        </div>
+      </a>
+      <a href="./details/PannaCotta.html" style="text-decoration: none">
+        <div class="card">
+
+          <div class="imgBox">
+            <img src="details/product img/Dessert/PuddingBerry/Pud1.png" class="pizza">
+          </div>
+
+          <div class="contentBox">
+            <h3 style="color: 	#7FFF00;">BERRY PUDDING</h3>
+            <h2 class="price">36€</h2>
+            <a data-toggle="modal" data-target="#cart" data-name="BERRY-PUDDING" data-price="36" class="add-to-cart btn buy">Buy Now</a>
+          </div>
+
+        </div>
+        <a href="./details/Japanese Daifuku.html" style="text-decoration: none">
+          <div class="card">
+
+            <div class="imgBox">
+              <img src="details/product img/Dessert/TetCake/Tet1.png" class="pizza">
+            </div>
+
+            <div class="contentBox">
+              <h3 style="color: 	#7FFF00;">TET CAKE</h3>
+              <h2 class="price">50€</h2>
+              <a data-toggle="modal" data-target="#cart" data-name="TETCAKE" data-price="50" class="add-to-cart btn buy">Buy Now</a>
+            </div>
+
+          </div>
+        </a>
+    </div>
+  </div>
+
+  <!--shoping card-->
+  <!-- Modal -->
+  <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Your Cart
+            <a type="button"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                class="bi bi-cart2" viewBox="0 0 16 16">
+
+                <path
+                  d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+              </svg><sup><sup><span class="total-count"></span></sup></sup>
+            </a>
+          </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <table class="show-cart table">
+          </table>
+          <div>Total price: <span class="total-cart"></span>€</div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-order">Order now</button>
+          <button class="clear-cart btn btn-danger">Clear Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  </div>
+  <!--Start Footer-->
+  <footer class="footer background">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <h3>About Us</h3>
+          <p>At Shale Pizza, we know that pizza is more than just food. Pizza is the centre of the family on a Friday
+            night.
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h3>Opening Hours</h3>
+          <p><span>Monday : Closed</p>
+          <p>Tue-Wed : 9:Am - 10PM</p>
+          <p>Thu-Fri : 9:Am - 10PM</p>
+          <p>Sat-Sun : 5:PM - 10PM</p>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h3>Contact Information</h3>
+          <p>590 August Revolution, District 3, Ho Chi Minh City.</p>
+          <p>Phone: +84 338 805 198</p>
+          <p>Email: shalepizza@gmail.com</p>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h3>Subscribe</h3>
+          <div class="subscribe">
+            <form class="subscribe">
+              <input name="email" class="form_input" placeholder="Enter Email..." type="email">
+              <button type="submit" class="submit">SUBSCRIBE</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-lg-12">
+          <p class="coppy-right">All Rights Reserved. © 2022 Shale Pizza Restaurant.
+        </div>
+      </div>
+  </footer>
+  <!-- End Footer -->
+
+  <script src="./shopingcart.js"></script>
+</body>
+
+</html>

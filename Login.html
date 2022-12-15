@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <title>Login</title>
+
+  <!-- Site Metas -->
+  <title>Shale Pizza</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- Bootsrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+  <!-- Angular JS -->
+  <script src="aj/angular.min.js"></script>
+  <!-- Sweet Arlert -->
+  <script src="dist/sweetalert.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="dist/sweetalert.css">
+  <link rel="stylesheet" href="login.css" />
+</head>
+
+<body>
+  <div class="signup">
+    <h1 class="signup-heading">Login</h1>
+    <form action="index.html" class="signup-form" autocomplete="off" onsubmit="return false;">
+      <label for="email" class="signup-label">Email</label>
+      <input type="email" id="Email" class="signup-input" placeholder="Your Email">
+      <label for="fullname" class="signup-label">Password</label>
+      <input type="password" id="Password" class="signup-input" placeholder="Your Password">
+      <button class="signup-submit" onclick="checkSubmit()">Login</button>
+    </form>
+    <p class="signup-already">
+      <span>Don't have an account?</span>
+      <a href="SignUp.html" class="signup-login-link">Sign up</a>
+    </p>
+    <div class="signup-or"><span>Or</span></div>
+    <button class="signup-social">
+      <i class="fa fa-facebook signup-social-icon"></i>
+      <span class="signup-social-text">Login with Facebook</span>
+    </button>
+    <br>
+    <button class="signup-social1">
+      <i class="fa fa-google-plus signup-social-icon1"></i>
+      <span class="signup-social-text">Login with Google</span>
+    </button>
+
+  </div>
+  <script>
+    function checkSubmit() {
+      var Password = document.getElementById("Password").value;
+      var Email = document.getElementById("Email").value;
+      if (!Password) {
+        swal({
+          title: "Fail!",
+          text: "Please Enter Your Name!",
+          type: "error",
+          confirmButtonText: "OK"
+        });
+        return false;
+      } else if (!Email) {
+        swal({
+          title: "Fail!",
+          text: "Please Enter Your Email!",
+          type: "error",
+          confirmButtonText: "OK"
+        });
+        return false;
+      } else if (!/^([a-zA-Z0-9_\.\-]{3,4})+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})$/.test(Email)) {
+        swal({
+          title: "Fail!",
+          text: "Invalid Email!",
+          type: "error",
+          confirmButtonText: "OK"
+        });
+        return false;
+      } else {
+        swal({
+          title: " ",
+          text: " Login Success",
+          type: "success",
+          confirmButtonText: "OK",
+        },
+          function () {
+            window.location = "./index.html";
+          });
+
+        return true;
+      }
+    }
+  </script>
+
+</body>
+
+</html>
