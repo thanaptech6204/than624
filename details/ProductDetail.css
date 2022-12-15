@@ -10,7 +10,10 @@
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1.5rem;
     padding: 10px;
+
 }
+
+
 
 .Product .img-select .img-item img{
     width: 100px;
@@ -66,7 +69,15 @@
 .Product .product-content {
     padding: 2rem 1rem;
 }
-
+.Product .product-content::after{
+    content: "Thân Nguyễn";
+    position: absolute;
+    bottom: 0;
+    left: 740px;
+    color: #cfa671;
+    font-weight: 600;
+    font-size: 1em;
+}
 .Product .product-title {
     font-size: 40px;
     text-transform: capitalize;
@@ -173,7 +184,13 @@
         grid-template-columns: none;
         padding: 10px;
     }
-
+    .Product .card::after{
+        color: #cfa671;
+        content: "Thân Nguyễn";
+        margin-left: 265px;
+        font-size: 1em;
+        font-weight: 600;
+    }
     .Product .card-wrapper {
         height: 100%;
         display: flex;

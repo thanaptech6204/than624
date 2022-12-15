@@ -369,7 +369,7 @@ h1 {
 }
 
 .containerProduct .card::after {
-  content: "ThanNguyen";
+  content: "Thân Nguyễn";
   position: absolute;
   bottom: 0;
   left: 36px;
